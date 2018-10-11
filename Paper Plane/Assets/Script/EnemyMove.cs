@@ -26,20 +26,6 @@ public class EnemyMove : MonoBehaviour
         setNew();
 
     }
-    //void OnTriggerEnter(Collider e)
-    //{
-    //    if (e.gameObject.tag.CompareTo("Player") == 0)
-    //    {
-    //        Destroy(this.gameObject);
-    //        GameManager.instance.playerHealth--;
-    //    }
-    //    else if (e.gameObject.tag.CompareTo("FireB") == 0)
-    //    {
-    //        Destroy(this.gameObject);
-    //        Destroy(e.gameObject);
-    //    }
-
-    //}
     void setNew()//初始化速度方向
     {
         if (check == true)
@@ -88,13 +74,13 @@ public class EnemyMove : MonoBehaviour
             Destroy(e.gameObject);
         }
     }
-    void back()
+    void back()//飞出界反弹
     {
         if (rb.position.x > 6.5f || rb.position.x < -6.5f)
             enemySpeed.x = -enemySpeed.x;
         if (rb.position.y > 5f || rb.position.y < -5f)
             enemySpeed.y = -enemySpeed.y;
-    }//飞出界反弹
+    }
     void push()
     {
         rb.velocity = enemySpeed;
