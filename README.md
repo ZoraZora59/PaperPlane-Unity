@@ -1,7 +1,7 @@
 # PaperPlane 纸飞机的求生
  
 ***
- 运行方式：运行Build目录下PaperPlane.exe即可。只支持Windows运行。
+ 运行方式：解压缩Build.7z，运行Build目录下PaperPlane.exe即可。只支持Windows运行。
 ## 游戏说明：
     你是一只迷路的纸飞机，尽力躲开从各种角度飞来的纸团，生存下去，争取回到主人手中。
 ## 游戏操作：
